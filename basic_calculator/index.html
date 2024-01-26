@@ -7,7 +7,6 @@
     <title>Practice</title>
   </head>
   <body>
-    <h1>Calculator</h1>
     <div class="calculator-container">
       <input id="display" type="display" readonly placeholder="0" />
       <div class="user-input">
@@ -21,7 +20,7 @@
         <button id="fiveBtn" onclick="appendToDisplay('5')">5</button>
         <button id="sixBtn" onclick="appendToDisplay('6')">6</button>
 
-        <button id="multiplyBtn" onclick="multiplyBtn()">x</button>
+        <button id="multiplyBtn" onclick="appendToDisplay('*')">x</button>
         <button id="sevenBtn" onclick="appendToDisplay('7')">7</button>
         <button id="eightBtn" onclick="appendToDisplay('8')">8</button>
         <button id="nineBtn" onclick="appendToDisplay('9')">9</button>
@@ -33,6 +32,11 @@
 
         <button id="resetBtn" onclick="reset()">C</button>
       </div>
+    </div>
+    <button id="historyBtn" onclick="showHistory()">History</button>
+    <div id="historyContainer" style="display: none">
+      <h2>History</h2>
+      <ul id="historyList"></ul>
     </div>
     <script src="/basic_calculator/script.js"></script>
   </body>

@@ -31,3 +31,6 @@ button{
     font-weight: bolder;
     cursor: pointer;
 }
+body{
+    display: flex;
+}
